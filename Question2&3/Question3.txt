@@ -1,0 +1,15 @@
+
+--First Query
+select Students.Std_Name, Books.Book_Name, Renting_History.Rent_Date 
+from Renting_History 
+Join Students ON
+Renting_History.Student_ID= Students.Student_ID
+Join Books ON Renting_History.Book_ID = Booke.Book_ID;
+
+
+--Second Query
+
+select Students.Std_Name, count(*) as numberOFRentedBooks 
+from Students
+inner Join Renting_History ON Renting_History.Student_ID = Students.Student_ID group by Students.Std_Name
+group by Std_Name HAVING COUNT(*)>1;

@@ -1,0 +1,34 @@
+Q2 : 
+
+int n = 0;
+While ( n<10) //syntax for while loop
+{
+int a = n+2; // Declartion should be before loop
+int b = a+n; // Declartion should be before loop
+System.out.println(“a = ”+a);
+n=5; // Should be (++) or (--)
+}
+System.out.println(“a = “+a);
+System.out.println(“b = “+b);
+System.out.println(“n = “+n); 
+-------------------------------------------------------------
+Correct Code 
+
+public void Test(){
+
+        int n = 0;
+        int a = 0;
+        int b= 0;
+
+        while (n<10)
+        {
+             a = n+2;
+             b = a+n;
+            System.out.println("a = "+a);
+            n++;
+        }
+        System.out.println("a = "+ a);
+        System.out.println("b = "+ b);
+        System.out.println("n = "+ n);
+}
+
