@@ -1,0 +1,4 @@
+URL = http://www.testyou.in/Login.aspx
+Username = test
+Password = test
+ErrorMessage = Userid or Password did Not Match !!
